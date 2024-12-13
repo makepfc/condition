@@ -66,11 +66,14 @@
 
         <h1>Pages</h1>
         <button onclick="pA()">Inscribed by previous owner</button>
+        <button onclick="pB()">clean, unmarked pages</button>
 
         <h1>Text Output</h1>
         <p id="sA"></p>
         <p id="cA"></p>
         <p id="pA"></p>
+        However, 
+        <p id="pB"></p>
 
         <script>
             function sA() {
@@ -81,6 +84,9 @@
             }
             function pA() {
                 document.getElementById("pA").innerHTML = "The book is inscribed by the previous owner.";
+            }
+            function pB() {
+                document.getElementById("pA").innerHTML = "The book has clean, unmarked pages.";
             }
         </script>
         
