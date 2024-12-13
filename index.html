@@ -64,6 +64,7 @@
         <button onclick="dB()">clean</button>
         <button onclick="dC()">Shelf wear</button>
         <button onclick="dD()">sticker damage</button>
+        <button onclick="dE()">small tear</button>
 
         <h1>Cover</h1>
         <button onclick="cA()">Bumped corners</button>
@@ -80,12 +81,14 @@
         <button onclick="pG()">discolouration</button>
         <button onclick="pH()">annotations: Ink</button>
         <button onclick="pI()">annotations: Pencil</button>
+        <button onclick="pJ()">free from annotations</button>
 
         <h1>Text Output</h1>
         <p id="sA"></p>
         <p id="dA"></p>
         <p id="dC"></p>
         <p id="dD"></p>
+        <p id="dE"></p>
         <p id="cA"></p>
         <p id="cC"></p>
         <p id="pA"></p>
@@ -100,6 +103,7 @@
         <p id="dB"></p>
         <p id="pC"></p>
         <p id="cB"></p>
+        <p id="pJ"></p>
 
         <script>
             function sA() {
@@ -116,6 +120,9 @@
             }
             function dD() {
                 document.getElementById("dC").innerHTML = "The dust jacket has some sticker damage.";
+            }
+            function dE() {
+                document.getElementById("dC").innerHTML = "There is a small tear to the dust jacket.";
             }
             function cA() {
                 document.getElementById("cA").innerHTML = "The book has bumped corners.";
@@ -152,6 +159,9 @@
             }
             function pI() {
                 document.getElementById("pA").innerHTML = "Some pages contain annotations in pencil.";
+            }
+            function pJ() {
+                document.getElementById("pA").innerHTML = "The interior pages are free from annotations.";
             }
         </script>
         
