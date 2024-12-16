@@ -58,7 +58,7 @@
 <!-- Current draft (functionality / JS v1) -->
         <h1>Slip case?</h1>
         <p>Does the book have a slipcase?</p>
-        <img id="slipcaseImage" src="anatomy_of_a_book.png">
+        <img id="slipcaseImage" onmouseover="mouseOverSlipcase()" onmouseout="mouseOutSlipcase()" src="anatomy_of_a_book.png">
             <!-- onmouseover="mouseOverSlipcase()" -->
             
         <p>
@@ -194,6 +194,12 @@
             }
             function pK() {
                 document.getElementById("pK").innerHTML = "The book has tight binding.";
+            }
+            function mouseOverSlipcase() {
+                document.getElementById("slipcaseImage").src = "test_slipcase.png";
+            }
+             function mouseOutSlipcase() {
+                document.getElementById("slipcaseImage").src = "anatomy_of_a_book.png";
             }
 
         </script>
