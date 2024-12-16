@@ -58,9 +58,9 @@
 <!-- Current draft (functionality / JS v1) -->
         <h1>Slip case?</h1>
         <p>Does the book have a slipcase?</p>
-        <img id="slipcaseImage" 
+        <img id="slipcaseImage" src="anatomy_of_a_book.png">
             <!-- onmouseover="mouseOverSlipcase()" -->
-            src="anatomy_of_a_book.png">
+            
         <p>
             <button onclick="sA()">Shelf wear</button>
             <button onclick="sB()">small pieces of colour missing</button>
@@ -195,11 +195,12 @@
             function pK() {
                 document.getElementById("pK").innerHTML = "The book has tight binding.";
             }
-            function mouseOverSlipcase() {
+
+        </script>
+        <!--             function mouseOverSlipcase() {
                 document.getElementById("slipcaseImage").innerHTML = "Slipcase: Case with an open end into which a book is placed for
                 protection.";
-            }
-        </script>
+            } -->
         
     </body>
 </html>
