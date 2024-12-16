@@ -59,8 +59,10 @@
         <h1>Slip case?</h1>
         <p>Does the book have a slipcase?</p>
         <img id="slipcaseImage" onmouseover="mouseOverSlipcase()" src="anatomy_of_a_book.png">
-        <button onclick="sA()">Shelf wear</button>
-        <button onclick="sB()">small pieces of colour missing</button>
+        <p>
+            <button onclick="sA()">Shelf wear</button>
+            <button onclick="sB()">small pieces of colour missing</button>
+        </p>
 
         <h1>Dustjacket?</h1>
         <p>Does the book have a dust jacket?</p>
@@ -193,7 +195,7 @@
             }
             function mouseOverSlipcase() {
                 document.getElementById("slipcaseImage").innerHTML = "Slipcase: Case with an open end into which a book is placed for
-protection, allowing the spine to remain visible.";
+                protection.";
             }
         </script>
         
