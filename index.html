@@ -82,7 +82,7 @@
             <br />
             <br />
             <br />
-            <input type="button" onclick="location.reload()" value="Reset">
+            <input type="button" onclick="newDoc()" value="Reset">
         <script>
             /* Function to display/hide text output & style button as selected/deselected. Section 1. */
                 function sA() {
@@ -374,6 +374,11 @@
                 }
                 function mouseOutpFButton() {
                     document.getElementById("pagesImage").src = "pages.png";
+                }
+            /* Function for reset button. */
+                function newDoc() {
+                    location.reload();
+                    window.open("https://makepfc.github.io/condition/#start", "_self");
                 }
         </script>
     </body>
