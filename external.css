@@ -37,14 +37,20 @@ button.buttonSelected:hover {
 }
 div.inputs {
     margin: 30px;
+    position: static;
+    width: 100%;
 }
 div.outputs {
     text-align: center;
     margin: 30px;
+    position: static;
+    width: 100%;
 }
 header {
     text-align: center;
     margin: 30px;
+    position: static;
+    width: 100%;
 }
 img {
     float: left;
