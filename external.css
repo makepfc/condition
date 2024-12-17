@@ -1,10 +1,33 @@
 body {
     background-color: white;
     color: #4a4a4a;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
     color: yellowgreen;
     font-family: Arial, Helvetica, sans-serif;
 }
 h2 {
-    color: yellowgreen;}
+    color: yellowgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button.buttonBlank {
+    background-color: gray;
+    color: #4a4a4a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button.buttonBlank:hover {
+    background-color: orangered;
+    color: #4a4a4a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button.buttonSelected {
+    background-color: yellowgreen;
+    color: #4a4a4a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button.buttonSelected:hover {
+    background-color: orangered;
+    color: #4a4a4a;
+    font-family: Arial, Helvetica, sans-serif;
+}
