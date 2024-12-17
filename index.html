@@ -8,205 +8,160 @@
     </head>
     <body>
       <h1>Book Condition Description</h1>
-       <!-- <table> -->
-            <!-- <tr> -->
-                <!-- <td> -->
-                    <!-- <h2>Slipcase</h2> -->
-                    <!-- <p>Does the book have a slipcase or presentation box?</p> -->
-                <!-- </td> -->
-                <!-- <td> -->
-                    <!-- Blank table cell. -->
-                <!-- </td> -->
-                <!-- </tr> -->
-                <!-- <tr> -->
-                    <!-- <td> -->
-                        <!-- <p>Graphic to go here!</p> -->
-                    <!-- </td> -->
-                <!-- <td> -->
-                    <!-- ACTION TO CLEAR THIS: Replace placeholder once learn how to code the tags! -->
-                    <!-- <p>tag</p> -->
-                    <!-- <p>tag</p> -->
-                    <!-- <p>tag</p> -->
-                    <!-- <p>tag</p> -->
-                    <!-- <p>tag</p> -->
-                <!-- </td> -->
-            <!-- </tr> -->
-            <!-- <tr> -->
-                <!-- <td> -->
-                    <!-- <h2>Cover</h2> -->
-                    <!-- <p>...?</p> -->
-                <!-- </td> -->
-                <!-- <td> -->
-                    <!-- Blank table cell. -->
-                <!-- </td> -->
-                <!-- </tr> -->
-                <!-- <tr> -->
-                    <!-- <td> -->
-                        <!-- <p>Graphic to go here!</p> -->
-                    <!-- </td> -->
-                <!-- <td> -->
-                    <!-- ACTION TO CLEAR THIS: Replace placeholder once learn how to code the tags! -->
-                    <!-- <p>tag</p> -->
-                    <!-- <p>tag</p> -->
-                    <!-- <p>tag</p> -->
-                    <!-- <p>tag</p> -->
-                    <!-- <p>tag</p> -->
-                <!-- </td> -->
-            <!-- </tr> -->
-        <!-- </table> -->
-    
-<!-- Current draft (functionality / JS v1) -->
-        <h1>Slip case?</h1>
-        <p>Does the book have a slipcase?</p>
-        <img id="slipcaseImage" onmouseover="mouseOverSlipcase()" onmouseout="mouseOutSlipcase()" src="anatomy_of_a_book.png">
-            <!-- onmouseover="mouseOverSlipcase()" -->
-            
-        <p>
-            <button onclick="sA()">Shelf wear</button>
-            <button onclick="sB()">small pieces of colour missing</button>
-        </p>
-
-        <h1>Dustjacket?</h1>
-        <p>Does the book have a dust jacket?</p>
-        <button onclick="dA()">slightly marked</button>
-        <button onclick="dB()">clean</button>
-        <button onclick="dC()">Shelf wear</button>
-        <button onclick="dD()">sticker damage</button>
-        <button onclick="dE()">small tear</button>
-        <button onclick="dF()">small pieces of colour missing</button>
-        <button onclick="dG()">crease</button>
-
-        <h1>Cover</h1>
-        <button onclick="cA()">Bumped corners</button>
-        <button onclick="cB()">clean and unmarked</button>
-        <button onclick="cC()">Shelf wear</button>
-        <button onclick="cD()">small pieces of colour missing</button>
-
-        <h1>Pages</h1>
-        <button onclick="pA()">Inscribed by previous owner: Ink</button>
-        <button onclick="pF()">Inscribed by previous owner: Pencil</button>
-        <button onclick="pB()">clean, unmarked</button>
-        <button onclick="pC()">uncreased</button>
-        <button onclick="pD()">water damage</button>
-        <button onclick="pE()">foxing</button>
-        <button onclick="pG()">discolouration</button>
-        <button onclick="pH()">annotations: Ink</button>
-        <button onclick="pI()">annotations: Pencil</button>
-        <button onclick="pJ()">free from annotations</button>
-        <button onclick="pK()">tight binding</button>
-
-        <h1>Text Output</h1>
-        <span id="sA"></span>
-        <span id="sB"></span>
-        <span id="dA"></span>
-        <span id="dC"></span>
-        <span id="dD"></span>
-        <span id="dE"></span>
-        <span id="dF"></span>
-        <span id="dG"></span>
-        <span id="cA"></span>
-        <span id="cC"></span>
-        <span id="cD"></span>
-        <span id="pA"></span>
-        <span id="pF"></span>
-        <span id="pD"></span>
-        <span id="pE"></span>
-        <span id="pG"></span>
-        <span id="pH"></span>
-        <span id="pI"></span>
-        <p>However, </p> 
-        <span id="pB"></span>
-        <span id="dB"></span>
-        <span id="pC"></span>
-        <span id="cB"></span>
-        <span id="pJ"></span>
-        <span id="pK"></span>
-
+        <!-- User input section 1. -->
+            <h2>Slipcase?</h2>
+                <p>Does the book have a slipcase?</p>
+                <img id="slipcaseImage" onmouseover="mouseOverSlipcase()" onmouseout="mouseOutSlipcase()" src="anatomy_of_a_book.png">
+                <button onclick="sA()">shelf wear</button>
+                <button onclick="sB()">small pieces of colour missing</button>
+        <!-- User input section 2. -->
+            <h2>Dust jacket?</h2>
+                <p>Does the book have a dust jacket?</p>
+                <button onclick="dA()">slightly marked</button>
+                <button onclick="dB()">clean</button>
+                <button onclick="dC()">shelf wear</button>
+                <button onclick="dD()">sticker damage</button>
+                <button onclick="dE()">small tear</button>
+                <button onclick="dF()">small pieces of colour missing</button>
+                <button onclick="dG()">crease</button>
+        <!-- User input section 3. -->
+            <h2>Cover</h2>
+                <button onclick="cA()">bumped corners</button>
+                <button onclick="cB()">clean and unmarked</button>
+                <button onclick="cC()">shelf wear</button>
+                <button onclick="cD()">small pieces of colour missing</button>
+        <!-- User input section 4. -->
+            <h2>Pages</h2>
+                <button onclick="pA()">inscribed by previous owner: Ink</button>
+                <button onclick="pF()">inscribed by previous owner: Pencil</button>
+                <button onclick="pB()">clean, unmarked</button>
+                <button onclick="pC()">uncreased</button>
+                <button onclick="pD()">water damage</button>
+                <button onclick="pE()">foxing</button>
+                <button onclick="pG()">discolouration</button>
+                <button onclick="pH()">annotations: Ink</button>
+                <button onclick="pI()">annotations: Pencil</button>
+                <button onclick="pJ()">free from annotations</button>
+                <button onclick="pK()">tight binding</button>
+        <!-- Text output section. -->
+            <h2>Condition Description for Shop Listing</h2>
+                <!-- Negative outputs from section 1. -->
+                    <span id="sA"></span>
+                    <span id="sB"></span>
+                <!-- Negative outputs from section 2. -->
+                    <span id="dA"></span>
+                    <span id="dC"></span>
+                    <span id="dD"></span>
+                    <span id="dE"></span>
+                    <span id="dF"></span>
+                    <span id="dG"></span>
+                <!-- Negative outputs from section 3. -->
+                    <span id="cA"></span>
+                    <span id="cC"></span>
+                    <span id="cD"></span>
+                <!-- Negative outputs from section 4. -->
+                    <span id="pA"></span>
+                    <span id="pF"></span>
+                    <span id="pD"></span>
+                    <span id="pE"></span>
+                    <span id="pG"></span>
+                    <span id="pH"></span>
+                    <span id="pI"></span>
+                <!-- Positive outputs go at the end (for shop listing). --> 
+                    <span id="dB"></span>
+                    <span id="cB"></span>
+                    <span id="pB"></span>
+                    <span id="pC"></span>
+                    <span id="pJ"></span>
+                    <span id="pK"></span>
         <script>
-            function sA() {
-                document.getElementById("sA").innerHTML = "Slip case has some shelf wear. ";
-            }
-            function sB() {
-                document.getElementById("sB").innerHTML = "Slip case has some small pieces of colour missing. ";
-            }
-             function dA() {
-                document.getElementById("dA").innerHTML = "The dust jacket is slightly marked. ";
-            }
-            function dB() {
-                document.getElementById("dB").innerHTML = "The dust jacket is clean. ";
-            }
-            function dC() {
-                document.getElementById("dC").innerHTML = "The dust jacket has some shelf wear. ";
-            }
-            function dD() {
-                document.getElementById("dD").innerHTML = "The dust jacket has some sticker damage. ";
-            }
-            function dE() {
-                document.getElementById("dE").innerHTML = "There is a small tear to the dust jacket. ";
-            }
-            function dF() {
-                document.getElementById("dF").innerHTML = "The dust jacket has small pieces of colour missing. ";
-            }
-            function dG() {
-                document.getElementById("dG").innerHTML = "The dust jacket has a small crease. ";
-            }
-            function cA() {
-                document.getElementById("cA").innerHTML = "The book has bumped corners. ";
-            }
-            function cB() {
-                document.getElementById("cB").innerHTML = "The cover is clean and unmarked. ";
-            }
-            function cC() {
-                document.getElementById("cC").innerHTML = "The cover has some shelf wear. ";
-            }
-            function cD() {
-                document.getElementById("cD").innerHTML = "The cover has some small pieces of colour missing. ";
-            }
-            function pA() {
-                document.getElementById("pA").innerHTML = "The book is inscribed by the previous owner in ink. ";
-            }
-            function pB() {
-                document.getElementById("pB").innerHTML = "The book has clean, unmarked pages. ";
-            }
-            function pC() {
-                document.getElementById("pC").innerHTML = "The book has uncreased pages. ";
-            }
-            function pD() {
-                document.getElementById("pD").innerHTML = "The pages have some water damage. ";
-            }
-            function pE() {
-                document.getElementById("pE").innerHTML = "The pages show some foxing. ";
-            }
-            function pF() {
-                document.getElementById("pF").innerHTML = "The book is inscribed by the previous owner in pencil. ";
-            }
-            function pG() {
-                document.getElementById("pG").innerHTML = "The pages are somewhat discoloured with age. ";
-            }
-            function pH() {
-                document.getElementById("pH").innerHTML = "Some pages contain annotations in ink. ";
-            }
-            function pI() {
-                document.getElementById("pI").innerHTML = "Some pages contain annotations in pencil. ";
-            }
-            function pJ() {
-                document.getElementById("pJ").innerHTML = "The interior pages are free from annotations. ";
-            }
-            function pK() {
-                document.getElementById("pK").innerHTML = "The book has tight binding. ";
-            }
-            function mouseOverSlipcase() {
-                document.getElementById("slipcaseImage").src = "test_slipcase.png";
-            }
-             function mouseOutSlipcase() {
-                document.getElementById("slipcaseImage").src = "anatomy_of_a_book.png";
-            }
-
+            /* Functions to display/hide text output & style button as selected/deselected. Section 1. */
+                function sA() {
+                    document.getElementById("sA").innerHTML = "Slipcase has some shelf wear. ";
+                }
+                function sB() {
+                    document.getElementById("sB").innerHTML = "Slipcase has some small pieces of colour missing. ";
+                }
+            /* Functions to display/hide text output & format button as selected/deselected. Section 2. */
+                function dA() {
+                    document.getElementById("dA").innerHTML = "The dust jacket is slightly marked. ";
+                }
+                function dB() {
+                    document.getElementById("dB").innerHTML = "The dust jacket is clean. ";
+                }
+                function dC() {
+                    document.getElementById("dC").innerHTML = "The dust jacket has some shelf wear. ";
+                }
+                function dD() {
+                    document.getElementById("dD").innerHTML = "The dust jacket has some sticker damage. ";
+                }
+                function dE() {
+                    document.getElementById("dE").innerHTML = "There is a small tear to the dust jacket. ";
+                }
+                function dF() {
+                    document.getElementById("dF").innerHTML = "The dust jacket has small pieces of colour missing. ";
+                }
+                function dG() {
+                    document.getElementById("dG").innerHTML = "The dust jacket has a small crease. ";
+                }
+            /* Functions to display/hide text output & format button as selected/deselected. Section 3. */
+                function cA() {
+                    document.getElementById("cA").innerHTML = "The book has bumped corners. ";
+                }
+                function cB() {
+                    document.getElementById("cB").innerHTML = "The cover is clean and unmarked. ";
+                }
+                function cC() {
+                    document.getElementById("cC").innerHTML = "The cover has some shelf wear. ";
+                }
+                function cD() {
+                    document.getElementById("cD").innerHTML = "The cover has some small pieces of colour missing. ";
+                }
+            /* Functions to display/hide text output & format button as selected/deselected. Section 4. */
+                function pA() {
+                    document.getElementById("pA").innerHTML = "The book is inscribed by the previous owner in ink. ";
+                }
+                function pB() {
+                    document.getElementById("pB").innerHTML = "The book has clean, unmarked pages. ";
+                }
+                function pC() {
+                    document.getElementById("pC").innerHTML = "The book has uncreased pages. ";
+                }
+                function pD() {
+                    document.getElementById("pD").innerHTML = "The pages have some water damage. ";
+                }
+                function pE() {
+                    document.getElementById("pE").innerHTML = "The pages show some foxing. ";
+                }
+                function pF() {
+                    document.getElementById("pF").innerHTML = "The book is inscribed by the previous owner in pencil. ";
+                }
+                function pG() {
+                    document.getElementById("pG").innerHTML = "The pages are somewhat discoloured with age. ";
+                }
+                function pH() {
+                    document.getElementById("pH").innerHTML = "Some pages contain annotations in ink. ";
+                }
+                function pI() {
+                    document.getElementById("pI").innerHTML = "Some pages contain annotations in pencil. ";
+                }
+                function pJ() {
+                    document.getElementById("pJ").innerHTML = "The interior pages are free from annotations. ";
+                }
+                function pK() {
+                    document.getElementById("pK").innerHTML = "The book has tight binding. ";
+                }
+            /* Functions to display further information on diagrams. */
+                function mouseOverSlipcase() {
+                    document.getElementById("slipcaseImage").src = "test_slipcase.png";
+                }
+                function mouseOutSlipcase() {
+                    document.getElementById("slipcaseImage").src = "anatomy_of_a_book.png";
+                }
+            /* Functions to display further information on buttons. Section 1. */
+            /* Functions to display further information on buttons. Section 2. */
+            /* Functions to display further information on buttons. Section 3. */
+            /* Functions to display further information on buttons. Section 4. */
         </script>
-        <!--             function mouseOverSlipcase() {
-                document.getElementById("slipcaseImage").innerHTML = "Slipcase: Case with an open end into which a book is placed for
-                protection.";
-            } -->
-        
     </body>
 </html>
