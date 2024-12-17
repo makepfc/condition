@@ -75,81 +75,249 @@
                     <span id="pJ"></span>
                     <span id="pK"></span>
         <script>
-            /* Functions to display/hide text output & style button as selected/deselected. Section 1. */
+            /* Function to display/hide text output & style button as selected/deselected. Section 1. */
                 function sA() {
-                    document.getElementById("sA").innerHTML = "Slipcase has some shelf wear. ";
+                    var sASelected = document.getElementById("sA");
+                    if (sASelected.innerHTML.match("Slipcase has some shelf wear. ")) {
+                        document.getElementById("sA").innerHTML = "";
+                        document.getElementById("sAButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("sA").innerHTML = "Slipcase has some shelf wear. ";
+                        document.getElementById("sAButton").className = "buttonSelected";
+                    }
                 }
                 function sB() {
-                    document.getElementById("sB").innerHTML = "Slipcase has some small pieces of colour missing. ";
+                    var sBSelected = document.getElementById("sB");
+                    if (sBSelected.innerHTML.match("Slipcase has some small pieces of colour missing. ")) {
+                        document.getElementById("sB").innerHTML = "";
+                        document.getElementById("sBButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("sB").innerHTML = "Slipcase has some small pieces of colour missing. ";
+                        document.getElementById("sBButton").className = "buttonSelected";
+                    }
                 }
-            /* Functions to display/hide text output & format button as selected/deselected. Section 2. */
+            /* Function to display/hide text output & format button as selected/deselected. Section 2. */
                 function dA() {
-                    document.getElementById("dA").innerHTML = "The dust jacket is slightly marked. ";
+                    var dASelected = document.getElementById("dA");
+                    if (dASelected.innerHTML.match("The dust jacket is slightly marked. ")) {
+                        document.getElementById("dA").innerHTML = "";
+                        document.getElementById("dAButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("dA").innerHTML = "The dust jacket is slightly marked. ";
+                        document.getElementById("dAButton").className = "buttonSelected";
+                    }
                 }
                 function dB() {
-                    document.getElementById("dB").innerHTML = "The dust jacket is clean. ";
+                    var dBSelected = document.getElementById("dB");
+                    if (dBSelected.innerHTML.match("The dust jacket is clean. ")) {
+                        document.getElementById("dB").innerHTML = "";
+                        document.getElementById("dBButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("dB").innerHTML = "The dust jacket is clean. ";
+                        document.getElementById("dBButton").className = "buttonSelected";
+                    }
                 }
                 function dC() {
-                    document.getElementById("dC").innerHTML = "The dust jacket has some shelf wear. ";
+                    var dCSelected = document.getElementById("dC");
+                    if (dCSelected.innerHTML.match("The dust jacket has some shelf wear. ")) {
+                        document.getElementById("dC").innerHTML = "";
+                        document.getElementById("dCButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("dC").innerHTML = "The dust jacket has some shelf wear. ";
+                        document.getElementById("dCButton").className = "buttonSelected";
+                    }
                 }
                 function dD() {
-                    document.getElementById("dD").innerHTML = "The dust jacket has some sticker damage. ";
+                    var dDSelected = document.getElementById("dD");
+                    if (dDSelected.innerHTML.match("The dust jacket has some sticker damage. ")) {
+                        document.getElementById("dD").innerHTML = "";
+                        document.getElementById("dDButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("dD").innerHTML = "The dust jacket has some sticker damage. ";
+                        document.getElementById("dDButton").className = "buttonSelected";
+                    }
                 }
                 function dE() {
-                    document.getElementById("dE").innerHTML = "There is a small tear to the dust jacket. ";
+                    var dESelected = document.getElementById("dE");
+                    if (dESelected.innerHTML.match("There is a small tear to the dust jacket. ")) {
+                        document.getElementById("dE").innerHTML = "";
+                        document.getElementById("dEButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("dE").innerHTML = "There is a small tear to the dust jacket. ";
+                        document.getElementById("dEButton").className = "buttonSelected";
+                    }
                 }
                 function dF() {
-                    document.getElementById("dF").innerHTML = "The dust jacket has small pieces of colour missing. ";
+                    var dFSelected = document.getElementById("dF");
+                    if (dFSelected.innerHTML.match("The dust jacket has small pieces of colour missing. ")) {
+                        document.getElementById("dF").innerHTML = "";
+                        document.getElementById("dFButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("dF").innerHTML = "The dust jacket has small pieces of colour missing. ";
+                        document.getElementById("dFButton").className = "buttonSelected";
+                    }
                 }
                 function dG() {
-                    document.getElementById("dG").innerHTML = "The dust jacket has a small crease. ";
+                    var dGSelected = document.getElementById("dG");
+                    if (dGSelected.innerHTML.match("The dust jacket has a small crease. ")) {
+                        document.getElementById("dG").innerHTML = "";
+                        document.getElementById("dGButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("dG").innerHTML = "The dust jacket has a small crease. ";
+                        document.getElementById("dGButton").className = "buttonSelected";
+                    }
                 }
-            /* Functions to display/hide text output & format button as selected/deselected. Section 3. */
+            /* Function to display/hide text output & format button as selected/deselected. Section 3. */
                 function cA() {
-                    document.getElementById("cA").innerHTML = "The book has bumped corners. ";
+                    var cASelected = document.getElementById("cA");
+                    if (cASelected.innerHTML.match("The book has bumped corners. ")) {
+                        document.getElementById("cA").innerHTML = "";
+                        document.getElementById("cAButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("cA").innerHTML = "The book has bumped corners. ";
+                        document.getElementById("cAButton").className = "buttonSelected";
+                    }
                 }
                 function cB() {
-                    document.getElementById("cB").innerHTML = "The cover is clean and unmarked. ";
+                    var cBSelected = document.getElementById("cB");
+                    if (cBSelected.innerHTML.match("The cover is clean and unmarked. ")) {
+                        document.getElementById("cB").innerHTML = "";
+                        document.getElementById("cBButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("cB").innerHTML = "The cover is clean and unmarked. ";
+                        document.getElementById("cBButton").className = "buttonSelected";
+                    }
                 }
                 function cC() {
-                    document.getElementById("cC").innerHTML = "The cover has some shelf wear. ";
+                    var cCSelected = document.getElementById("cC");
+                    if (cCSelected.innerHTML.match("The cover has some shelf wear. ")) {
+                        document.getElementById("cC").innerHTML = "";
+                        document.getElementById("cCButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("cC").innerHTML = "The cover has some shelf wear. ";
+                        document.getElementById("cCButton").className = "buttonSelected";
+                    }
                 }
                 function cD() {
-                    document.getElementById("cD").innerHTML = "The cover has some small pieces of colour missing. ";
+                    var cDSelected = document.getElementById("cD");
+                    if (cDSelected.innerHTML.match("The cover has some small pieces of colour missing. ")) {
+                        document.getElementById("cD").innerHTML = "";
+                        document.getElementById("cDButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("cD").innerHTML = "The cover has some small pieces of colour missing. ";
+                        document.getElementById("cDButton").className = "buttonSelected";
+                    }
                 }
-            /* Functions to display/hide text output & format button as selected/deselected. Section 4. */
+            /* Function to display/hide text output & format button as selected/deselected. Section 4. */
                 function pA() {
-                    document.getElementById("pA").innerHTML = "The book is inscribed by the previous owner in ink. ";
+                    var pASelected = document.getElementById("pA");
+                    if (pASelected.innerHTML.match("The book is inscribed by the previous owner in ink. ")) {
+                        document.getElementById("pA").innerHTML = "";
+                        document.getElementById("pAButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("pA").innerHTML = "The book is inscribed by the previous owner in ink. ";
+                        document.getElementById("pAButton").className = "buttonSelected";
+                    }
                 }
                 function pB() {
-                    document.getElementById("pB").innerHTML = "The book has clean, unmarked pages. ";
+                    var pBSelected = document.getElementById("pB");
+                    if (pBSelected.innerHTML.match("The book has clean, unmarked pages. ")) {
+                        document.getElementById("pB").innerHTML = "";
+                        document.getElementById("pBButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("pB").innerHTML = "The book has clean, unmarked pages. ";
+                        document.getElementById("pBButton").className = "buttonSelected";
+                    }
                 }
                 function pC() {
-                    document.getElementById("pC").innerHTML = "The book has uncreased pages. ";
+                    var pCSelected = document.getElementById("pC");
+                    if (pCSelected.innerHTML.match("The book has uncreased pages. ")) {
+                        document.getElementById("pC").innerHTML = "";
+                        document.getElementById("pCButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("pC").innerHTML = "The book has uncreased pages. ";
+                        document.getElementById("pCButton").className = "buttonSelected";
+                    }
                 }
                 function pD() {
-                    document.getElementById("pD").innerHTML = "The pages have some water damage. ";
+                    var pDSelected = document.getElementById("pD");
+                    if (pDSelected.innerHTML.match("The pages have some water damage. ")) {
+                        document.getElementById("pD").innerHTML = "";
+                        document.getElementById("pDButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("pD").innerHTML = "The pages have some water damage. ";
+                        document.getElementById("pDButton").className = "buttonSelected";
+                    }
                 }
                 function pE() {
-                    document.getElementById("pE").innerHTML = "The pages show some foxing. ";
+                    var pESelected = document.getElementById("pE");
+                    if (pESelected.innerHTML.match("The pages show some foxing. ")) {
+                        document.getElementById("pE").innerHTML = "";
+                        document.getElementById("pEButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("pE").innerHTML = "The pages show some foxing. ";
+                        document.getElementById("pEButton").className = "buttonSelected";
+                    }
                 }
                 function pF() {
-                    document.getElementById("pF").innerHTML = "The book is inscribed by the previous owner in pencil. ";
+                    var pFSelected = document.getElementById("pF");
+                    if (pFSelected.innerHTML.match("The book is inscribed by the previous owner in pencil. ")) {
+                        document.getElementById("pF").innerHTML = "";
+                        document.getElementById("pFButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("pF").innerHTML = "The book is inscribed by the previous owner in pencil. ";
+                        document.getElementById("pFButton").className = "buttonSelected";
+                    }
                 }
                 function pG() {
-                    document.getElementById("pG").innerHTML = "The pages are somewhat discoloured with age. ";
+                    var pGSelected = document.getElementById("pG");
+                    if (pGSelected.innerHTML.match("The pages are somewhat discoloured with age. ")) {
+                        document.getElementById("pG").innerHTML = "";
+                        document.getElementById("pGButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("pG").innerHTML = "The pages are somewhat discoloured with age. ";
+                        document.getElementById("pGButton").className = "buttonSelected";
+                    }
                 }
                 function pH() {
-                    document.getElementById("pH").innerHTML = "Some pages contain annotations in ink. ";
+                    var pHSelected = document.getElementById("pH");
+                    if (pHSelected.innerHTML.match("Some pages contain annotations in ink. ")) {
+                        document.getElementById("pH").innerHTML = "";
+                        document.getElementById("pHButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("pH").innerHTML = "Some pages contain annotations in ink. ";
+                        document.getElementById("pHButton").className = "buttonSelected";
+                    }
                 }
                 function pI() {
-                    document.getElementById("pI").innerHTML = "Some pages contain annotations in pencil. ";
+                    var pISelected = document.getElementById("pI");
+                    if (pISelected.innerHTML.match("Some pages contain annotations in pencil. ")) {
+                        document.getElementById("pI").innerHTML = "";
+                        document.getElementById("pIButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("pI").innerHTML = "Some pages contain annotations in pencil. ";
+                        document.getElementById("pIButton").className = "buttonSelected";
+                    }
                 }
                 function pJ() {
-                    document.getElementById("pJ").innerHTML = "The interior pages are free from annotations. ";
+                    var pJSelected = document.getElementById("pJ");
+                    if (pJSelected.innerHTML.match("The interior pages are free from annotations. ")) {
+                        document.getElementById("pJ").innerHTML = "";
+                        document.getElementById("pJButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("pJ").innerHTML = "The interior pages are free from annotations. ";
+                        document.getElementById("pJButton").className = "buttonSelected";
+                    }
                 }
                 function pK() {
-                    document.getElementById("pK").innerHTML = "The book has tight binding. ";
+                    var pKSelected = document.getElementById("pK");
+                    if (pKSelected.innerHTML.match("The book has tight binding. ")) {
+                        document.getElementById("pK").innerHTML = "";
+                        document.getElementById("pKButton").className = "buttonBlank";
+                    } else {
+                        document.getElementById("pK").innerHTML = "The book has tight binding. ";
+                        document.getElementById("pKButton").className = "buttonSelected";
+                    }
                 }
             /* Functions to display further information on diagrams. */
                 function mouseOverSlipcase() {
