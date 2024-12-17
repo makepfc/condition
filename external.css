@@ -36,7 +36,7 @@ button.buttonSelected:hover {
     margin: 5px;
 }
 div.inputs {
-    margin: 30px;
+    margin-bottom: 50px;
     position: static;
     min-width: 100%;
     clear: both;
@@ -44,7 +44,7 @@ div.inputs {
 }
 div.outputs {
     text-align: center;
-    margin: 30px;
+    margin-bottom: 50px;
     position: static;
     min-width: 100%;
     clear: both;
@@ -52,7 +52,7 @@ div.outputs {
 }
 header {
     text-align: center;
-    margin: 30px;
+    margin-bottom: 50px;
     position: static;
     width: 100%;
     clear: both;
@@ -61,6 +61,4 @@ img {
     float: left;
     width: 434px;
 }
-input {
 
-}
