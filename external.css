@@ -15,19 +15,41 @@ button.buttonBlank {
     background-color: gray;
     color: #4a4a4a;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
 }
 button.buttonBlank:hover {
     background-color: orangered;
     color: #4a4a4a;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
 }
 button.buttonSelected {
     background-color: yellowgreen;
     color: #4a4a4a;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
 }
 button.buttonSelected:hover {
     background-color: orangered;
     color: #4a4a4a;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+div.inputs {
+    margin: 30px;
+}
+div.outputs {
+    text-align: center;
+    margin: 30px;
+}
+header {
+    text-align: center;
+    margin: 30px;
+}
+img {
+    float: left;
+    width: 434px;
+}
+input {
+
 }
