@@ -39,18 +39,21 @@ div.inputs {
     margin: 30px;
     position: static;
     width: 100%;
+    clear: both;
 }
 div.outputs {
     text-align: center;
     margin: 30px;
     position: static;
     width: 100%;
+    clear: both;
 }
 header {
     text-align: center;
     margin: 30px;
     position: static;
     width: 100%;
+    clear: both;
 }
 img {
     float: left;
