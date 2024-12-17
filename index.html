@@ -11,15 +11,13 @@
         <!-- User input section 1. -->
             <h2>Slipcase?</h2>
                 <p>Does the book have a slipcase?</p>
-                <img id="slipcaseImage" onmouseover="mouseOverSlipcase()" onmouseout="mouseOutSlipcase()" src="anatomy_of_a_book.png"
-                    width="952" height="82">
+                <img id="slipcaseImage" onmouseover="mouseOverSlipcase()" onmouseout="mouseOutSlipcase()" src="slipcase.png" width="434" height="441">
                 <button onclick="sA()" id="sAButton" class="buttonBlank">shelf wear</button>
                 <button onclick="sB()" id="sBButton" class="buttonBlank">small pieces of colour missing</button>
         <!-- User input section 2. -->
             <h2>Dust Jacket?</h2>
                 <p>Does the book have a dust jacket?</p>
-                <img id="dustJacketImage" onmouseover="mouseOverDustJacket()" onmouseout="mouseOutDustJacket()" src="anatomy_of_a_book.png"
-                    width="952" height="82">
+                <img id="dustJacketImage" onmouseover="mouseOverDustJacket()" onmouseout="mouseOutDustJacket()" src="dust_jacket.png" width="434" height="441">
                 <button onclick="dA()" id="dAButton" class="buttonBlank">slightly marked</button>
                 <button onclick="dB()" id="dBButton" class="buttonBlank">clean</button>
                 <button onclick="dC()" id="dCButton" class="buttonBlank">shelf wear</button>
@@ -29,16 +27,14 @@
                 <button onclick="dG()" id="dGButton" class="buttonBlank">crease</button>
         <!-- User input section 3. -->
             <h2>Cover</h2>
-                <img id="coverImage" onmouseover="mouseOverCover()" onmouseout="mouseOutCover()" src="anatomy_of_a_book.png"
-                    width="952" height="82">
+                <img id="coverImage" onmouseover="mouseOverCover()" onmouseout="mouseOutCover()" src="cover.png" width="434" height="441">
                 <button onclick="cA()" id="cAButton" class="buttonBlank">bumped corners</button>
                 <button onclick="cB()" id="cBButton" class="buttonBlank">clean and unmarked</button>
                 <button onclick="cC()" id="cCButton" class="buttonBlank">shelf wear</button>
                 <button onclick="cD()" id="cDButton" class="buttonBlank">small pieces of colour missing</button>
         <!-- User input section 4. -->
             <h2>Pages</h2>
-                <img id="pagesImage" onmouseover="mouseOverPages()" onmouseout="mouseOutPages()" src="anatomy_of_a_book.png"
-                    width="952" height="82">        
+                <img id="pagesImage" onmouseover="mouseOverPages()" onmouseout="mouseOutPages()" src="pages.png" width="434" height="441">        
                 <button onclick="pA()" id="pAButton" class="buttonBlank">inscribed by previous owner: Ink</button>
                 <button onclick="pF()" id="pFButton" class="buttonBlank">inscribed by previous owner: Pencil</button>
                 <button onclick="pB()" id="pBButton" class="buttonBlank">clean, unmarked</button>
@@ -328,28 +324,28 @@
                 }
             /* Functions to display further information on diagrams. */
                 function mouseOverSlipcase() {
-                    document.getElementById("slipcaseImage").src = "test_slipcase.png";
+                    document.getElementById("slipcaseImage").src = "slipcase_definition.png";
                 }
                 function mouseOutSlipcase() {
-                    document.getElementById("slipcaseImage").src = "anatomy_of_a_book.png";
+                    document.getElementById("slipcaseImage").src = "slipcase.png";
                 }
                 function mouseOverDustJacket() {
-                    document.getElementById("dustJacketImage").src = "test_slipcase.png";
+                    document.getElementById("dustJacketImage").src = "dust_jacket_definition.png";
                 }
                 function mouseOutDustJacket() {
-                    document.getElementById("dustJacketImage").src = "anatomy_of_a_book.png";
+                    document.getElementById("dustJacketImage").src = "dust_jacket.png";
                 }
                 function mouseOverCover() {
-                    document.getElementById("coverImage").src = "test_slipcase.png";
+                    document.getElementById("coverImage").src = "cover_definition.png";
                 }
                 function mouseOutCover() {
-                    document.getElementById("coverImage").src = "anatomy_of_a_book.png";
+                    document.getElementById("coverImage").src = "cover.png";
                 }
                 function mouseOverPages() {
-                    document.getElementById("pagesImage").src = "test_slipcase.png";
+                    document.getElementById("pagesImage").src = "pages_definition.png";
                 }
                 function mouseOutPages() {
-                    document.getElementById("pagesImage").src = "anatomy_of_a_book.png";
+                    document.getElementById("pagesImage").src = "pages.png";
                 }
             /* Functions to display further information on buttons. Section 1. */
             /* Functions to display further information on buttons. Section 2. */
