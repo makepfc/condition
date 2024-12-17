@@ -7,14 +7,23 @@
         rel="stylesheet">
     </head>
     <body>
-      <h1 id="start">Book Condition Description</h1>
-        <!-- User input section 1. -->
+        <!-- Start of HTML coding of web page layout. -->>
+        <!-- Start of Header. -->
+        <header>
+            <h1 id="start">Book Condition Description</h1>
+        </header>
+        <!-- End of Header. -->
+        <!-- Start of User input section 1. -->
+        <div class="inputs">
             <h2>Slipcase?</h2>
                 <p>Does the book have a slipcase?</p>
                 <img id="slipcaseImage" onmouseover="mouseOverSlipcase()" onmouseout="mouseOutSlipcase()" src="slipcase.png" width="434" height="441">
                 <button onclick="sA()" id="sAButton" class="buttonBlank">shelf wear</button>
                 <button onclick="sB()" id="sBButton" class="buttonBlank">small pieces of colour missing</button>
-        <!-- User input section 2. -->
+        </div>
+        <!-- End of User input section 1. -->
+        <!-- Start of User input section 2. -->
+        <div class="inputs">
             <h2>Dust Jacket?</h2>
                 <p>Does the book have a dust jacket?</p>
                 <img id="dustJacketImage" onmouseover="mouseOverDustJacket()" onmouseout="mouseOutDustJacket()" src="dust_jacket.png" width="434" height="441">
@@ -25,14 +34,20 @@
                 <button onclick="dE()" id="dEButton" class="buttonBlank">small tear</button>
                 <button onclick="dF()" id="dFButton" class="buttonBlank">small pieces of colour missing</button>
                 <button onclick="dG()" id="dGButton" class="buttonBlank">crease</button>
-        <!-- User input section 3. -->
+        </div>
+        <!-- End of User input section 2. -->
+        <!-- Start of User input section 3. -->
+        <div class="inputs">
             <h2>Cover</h2>
                 <img id="coverImage" onmouseover="mouseOverCover()" onmouseout="mouseOutCover()" src="cover.png" width="434" height="441">
                 <button onclick="cA()" id="cAButton" class="buttonBlank">bumped corners</button>
                 <button onclick="cB()" id="cBButton" class="buttonBlank">clean and unmarked</button>
                 <button onclick="cC()" id="cCButton" class="buttonBlank">shelf wear</button>
                 <button onclick="cD()" id="cDButton" class="buttonBlank">small pieces of colour missing</button>
-        <!-- User input section 4. -->
+        </div>
+        <!-- End of User input section 3. -->
+        <!-- Start of User input section 4. -->
+        <div class="inputs">
             <h2>Pages</h2>
                 <img id="pagesImage" onmouseover="mouseOverPages()" onmouseout="mouseOutPages()" src="pages.png" width="434" height="441">        
                 <button onclick="pA()" id="pAButton" class="buttonBlank" onmouseover="mouseOverpAButton()" onmouseout="mouseOutpAButton()">inscribed by previous owner: Ink</button>
@@ -46,23 +61,26 @@
                 <button onclick="pI()" id="pIButton" class="buttonBlank">annotations: Pencil</button>
                 <button onclick="pJ()" id="pJButton" class="buttonBlank">free from annotations</button>
                 <button onclick="pK()" id="pKButton" class="buttonBlank">tight binding</button>
-        <!-- Text output section. -->
+        </div>
+        <!-- End of User input section 4. -->
+        <!-- Start of Text output section. -->
+        <div class="outputs">
             <h2>Condition Description for Shop Listing</h2>
-                <!-- Negative outputs from section 1. -->
+                <!-- Start of Negative outputs from section 1. -->
                     <span id="sA"></span>
                     <span id="sB"></span>
-                <!-- Negative outputs from section 2. -->
+                <!-- Start of Negative outputs from section 2. -->
                     <span id="dA"></span>
                     <span id="dC"></span>
                     <span id="dD"></span>
                     <span id="dE"></span>
                     <span id="dF"></span>
                     <span id="dG"></span>
-                <!-- Negative outputs from section 3. -->
+                <!-- Start of Negative outputs from section 3. -->
                     <span id="cA"></span>
                     <span id="cC"></span>
                     <span id="cD"></span>
-                <!-- Negative outputs from section 4. -->
+                <!-- Start of Negative outputs from section 4. -->
                     <span id="pA"></span>
                     <span id="pF"></span>
                     <span id="pD"></span>
@@ -70,21 +88,26 @@
                     <span id="pG"></span>
                     <span id="pH"></span>
                     <span id="pI"></span>
-                <!-- Positive outputs go at the end (for shop listing). --> 
+                <!-- Start of Positive outputs go at the end (for shop listing). --> 
                     <span id="dB"></span>
                     <span id="cB"></span>
                     <span id="pB"></span>
                     <span id="pC"></span>
                     <span id="pJ"></span>
                     <span id="pK"></span>
-        <!-- Reset button. -->
-            <br />
-            <br />
-            <br />
-            <br />
-            <input type="button" onclick="newDoc()" value="Reset">
+                <!-- Start of Reset button. -->
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <input type="button" onclick="newDoc()" value="Reset">
+                <!-- End of Reset button. -->
+        </div>
+        <!-- End of Text output section. -->
+        <!-- End of HTML coding of web page layout. -->>
+        <!-- Start of JavaScript functions. -->
         <script>
-            /* Function to display/hide text output & style button as selected/deselected. Section 1. */
+            /* Start of Function to display/hide text output & style button as selected/deselected (onclick): for Section 1. */
                 function sA() {
                     var sASelected = document.getElementById("sA");
                     if (sASelected.innerHTML.match("Slipcase has some shelf wear. ")) {
@@ -105,7 +128,7 @@
                         document.getElementById("sBButton").className = "buttonSelected";
                     }
                 }
-            /* Function to display/hide text output & format button as selected/deselected. Section 2. */
+            /* Start of Function to display/hide text output & style button as selected/deselected (onclick): for Section 2. */
                 function dA() {
                     var dASelected = document.getElementById("dA");
                     if (dASelected.innerHTML.match("The dust jacket is slightly marked. ")) {
@@ -176,7 +199,7 @@
                         document.getElementById("dGButton").className = "buttonSelected";
                     }
                 }
-            /* Function to display/hide text output & format button as selected/deselected. Section 3. */
+            /* Start of Function to display/hide text output & style button as selected/deselected (onclick): for Section 3. */
                 function cA() {
                     var cASelected = document.getElementById("cA");
                     if (cASelected.innerHTML.match("The book has bumped corners. ")) {
@@ -217,7 +240,7 @@
                         document.getElementById("cDButton").className = "buttonSelected";
                     }
                 }
-            /* Function to display/hide text output & format button as selected/deselected. Section 4. */
+            /* Start of Function to display/hide text output & style button as selected/deselected (onclick): for Section 4. */
                 function pA() {
                     var pASelected = document.getElementById("pA");
                     if (pASelected.innerHTML.match("The book is inscribed by the previous owner in ink. ")) {
@@ -328,7 +351,7 @@
                         document.getElementById("pKButton").className = "buttonSelected";
                     }
                 }
-            /* Functions to display further information on diagrams. */
+            /* Start of Functions to display further information on diagrams (onmouseover). */
                 function mouseOverSlipcase() {
                     document.getElementById("slipcaseImage").src = "slipcase_definition.png";
                 }
@@ -353,10 +376,13 @@
                 function mouseOutPages() {
                     document.getElementById("pagesImage").src = "pages.png";
                 }
-            /* Functions to display further information on buttons. Section 1. */
-            /* Functions to display further information on buttons. Section 2. */
-            /* Functions to display further information on buttons. Section 3. */
-            /* Functions to display further information on buttons. Section 4. */
+            /* Start of Functions to display further information on buttons (onmouseover): for Section 1. */
+                /* None. */
+            /* Start of Functions to display further information on buttons (onmouseover): for Section 2. */
+                /* None. */
+            /* Start of Functions to display further information on buttons (onmouseover): for Section 3. */
+                /* None. */
+            /* Start of Functions to display further information on buttons (onmouseover): for Section 4. */
                 function mouseOverPEButton() {
                     document.getElementById("pagesImage").src = "foxing.png";
                 }
@@ -375,11 +401,12 @@
                 function mouseOutpFButton() {
                     document.getElementById("pagesImage").src = "pages.png";
                 }
-            /* Function for reset button. */
+            /* Start of Function for reset button (onclick). */
                 function newDoc() {
                     location.reload();
                     window.open("https://makepfc.github.io/condition/#start", "_self");
                 }
         </script>
+        <!-- End of JavaScript functions. -->
     </body>
 </html>
