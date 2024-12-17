@@ -38,15 +38,17 @@ button.buttonSelected:hover {
 div.inputs {
     margin: 30px;
     position: static;
-    width: 100%;
+    min-width: 100%;
     clear: both;
+    min-height: 441px;
 }
 div.outputs {
     text-align: center;
     margin: 30px;
     position: static;
-    width: 100%;
+    min-width: 100%;
     clear: both;
+    min-height: 441px;
 }
 header {
     text-align: center;
