@@ -35,12 +35,12 @@
         <!-- User input section 4. -->
             <h2>Pages</h2>
                 <img id="pagesImage" onmouseover="mouseOverPages()" onmouseout="mouseOutPages()" src="pages.png" width="434" height="441">        
-                <button onclick="pA()" id="pAButton" class="buttonBlank">inscribed by previous owner: Ink</button>
-                <button onclick="pF()" id="pFButton" class="buttonBlank">inscribed by previous owner: Pencil</button>
+                <button onclick="pA()" id="pAButton" class="buttonBlank" onmouseover="mouseOverpAButton()" onmouseout="mouseOutpAButton()">inscribed by previous owner: Ink</button>
+                <button onclick="pF()" id="pFButton" class="buttonBlank" onmouseover="mouseOverpFButton()" onmouseout="mouseOutpFButton()">inscribed by previous owner: Pencil</button>
                 <button onclick="pB()" id="pBButton" class="buttonBlank">clean, unmarked</button>
                 <button onclick="pC()" id="pCButton" class="buttonBlank">uncreased</button>
                 <button onclick="pD()" id="pDButton" class="buttonBlank">water damage</button>
-                <button onclick="pE()" id="pEButton" class="buttonBlank">foxing</button>
+                <button onclick="pE()" id="pEButton" class="buttonBlank" onmouseover="mouseOverPEButton()" onmouseout="mouseOutPEButton()">foxing</button>
                 <button onclick="pG()" id="pGButton" class="buttonBlank">discolouration</button>
                 <button onclick="pH()" id="pHButton" class="buttonBlank">annotations: Ink</button>
                 <button onclick="pI()" id="pIButton" class="buttonBlank">annotations: Pencil</button>
@@ -351,6 +351,24 @@
             /* Functions to display further information on buttons. Section 2. */
             /* Functions to display further information on buttons. Section 3. */
             /* Functions to display further information on buttons. Section 4. */
+                function mouseOverPEButton() {
+                    document.getElementById("pagesImage").src = "foxing.png";
+                }
+                function mouseOutPEButton() {
+                    document.getElementById("pagesImage").src = "pages.png";
+                }
+                function mouseOverpAButton() {
+                    document.getElementById("pagesImage").src = "inscribed.png";
+                }
+                function mouseOutpAButton() {
+                    document.getElementById("pagesImage").src = "pages.png";
+                }
+                function mouseOverpFButton() {
+                    document.getElementById("pagesImage").src = "inscribed.png";
+                }
+                function mouseOutpFButton() {
+                    document.getElementById("pagesImage").src = "pages.png";
+                }
         </script>
     </body>
 </html>
